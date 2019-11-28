@@ -1,0 +1,1 @@
+python label_detection.py AIzaSyCBE4RYR8Na5XC5Y5IHMwCy6D33k0J0oLk images/water.jpeg
