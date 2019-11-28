@@ -1,1 +1,5 @@
-python label_detection.py AIzaSyCBE4RYR8Na5XC5Y5IHMwCy6D33k0J0oLk images/water.jpeg
+武器鑑定アプリ
+画像をアップロードすると、何の武器か鑑定してくれます。
+レア度；N,R,SR,SSR
+攻撃力；300~1000
+属性；？

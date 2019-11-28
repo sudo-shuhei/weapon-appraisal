@@ -12,6 +12,7 @@ from sys import argv
 import sys
 import json
 import requests
+from dotenv import load_dotenv
 from judge import judge_picture
 
 # 画像のアップロード先のディレクトリ
@@ -70,7 +71,8 @@ def uploaded_file(filename):
 
 def label_detection(image_filenames):
     ENDPOINT_URL = 'https://vision.googleapis.com/v1/images:annotate'
-    api_key = "AIzaSyCBE4RYR8Na5XC5Y5IHMwCy6D33k0J0oLk"
+    load_dotenv('.env')
+    api_key = os.environ.get("API_KEY")
     print(image_filenames, file = sys.stderr)
     img_requests = []
     with open(image_filenames, 'rb') as f:
